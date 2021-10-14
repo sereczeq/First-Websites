@@ -87,6 +87,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+div {
+  margin-top: 50px;                       /* For visualization only */
+  height: 20px;                           /* This is fixed! */
+  text-align: center;
+}
+
+.first {
+  font-size: 16px;                        /* This can change */
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

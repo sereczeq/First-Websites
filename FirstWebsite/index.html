@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>My first website</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,6 +20,12 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <style>
+    table, th, td {
+      border:5px solid green;
+    }
+  </style>
 </head>
 
 <body>
@@ -27,30 +33,139 @@
   <!-- Add your site or application content here -->
 <!--  1. Text-->
 <!--Headers-->
+  <a href="Headers.html">
   <h1> HEADERS </h1>
-  <h1>Header 1</h1>
-  <h2>Header 2</h2>
-  <h3>Header 4</h3>
-  <h4>Header 4</h4>
-  <h5>Header 5</h5>
-  <h6>Header 6</h6>
-<!--  Paragraphs-->
-  <h1>Paragraphs</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque inventore itaque iure laudantium, nostrum suscipit voluptatibus. Aliquam earum mollitia officiis quas recusandae reprehenderit sapiente sequi. Aperiam deserunt laudantium quae?</p>
-<!--List-->
+  </a>
+
+  <!--List-->
   <h1>List</h1>
   <ol>
     <li>option</li>
-    <li>a different option</li>
+    <li>a different option
       <ul>
         <li>elem</li>
         <li>elem cont</li>
       </ul>
+    </li>
     <li>completely new and exiting option</li>
   </ol>
 
+  <h1>Table</h1>
+  <table>
+    <colgroup>
+      <col span="2" style="background-color: gold">
+    </colgroup>
+    <tr>
+      <th>Head1</th>
+      <th>Head2</th>
+    </tr>
+    <tr>
+      <td rowspan="2">left1&2</td>
+      <td>right1</td>
+    </tr>
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td colspan="2">nested1&2</td>
+          </tr>
+          <tr>
+            <td>nested3</td>
+            <td>nested4</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <h1>Images</h1>
+  <img src="https://media.discordapp.net/attachments/725451061959065751/898128656000516116/xd.PNG" alt="Image with default size">
+  <img src="https://cdn.discordapp.com/attachments/725451061959065751/898128656428327012/blackhole.png" alt="Image with changed size" width="100" height="100">
+
+<!--  links-->
+<!--5. References (links):
+a. To another page
+b. To the label
+c. Files to download (via http and ftp), the files should be in different locations
+d. Sending mail
+e. Activated by clicking on the picture.
+-->
+  <h1>Links</h1>
+  <a href="https://www.google.com/" target="_blank">visit google</a>
+  <br>
+  <a href="index.html" download>Download html</a>
+  <br>
+  <a href="#fname">jump to First Name</a>
+  <br>
+
+  <a href="mailto: ngo.nguyen-thanh@pwr.edu.pl">Send email to ngo.nguyen-thanh@pwr.edu.pl</a>
+  <br>
+  <a href="https://www.google.com/" target="_blank">
+  <img src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA" alt="Google" width="100" height="100">
+  </a>
 <!--Form-->
+<!--  6. Form:
+a. Several text fields (input type = "text")
+b. A drop-down list with options grouped
+c. Group of single-select items (radio)
+d. A group of multiple-selection items (checkbox)
+e. Text field for entering a maximum of 200 characters (text area)
+f. Buttons for clearing and submitting the form.
+-->
   <h1> Form </h1>
+  <form>
+<!--    Text Fields-->
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname"><br>
+    <label for="mname">Middle Name:</label><br>
+    <input type="text" id="mname"><br>
+    <label for="lname">First Name:</label><br>
+    <input type="text" id="lname"><br>
+<!--    Dropdown-->
+    <label for="tasks">List of tasks to do</label>
+    <select  name="tasks" id="tasks">
+      <optgroup label="Text">
+        <option value="Headers">Headers</option>
+        <option value="Paragraphs">Paragraphs</option>
+        <option value="Bold/italic etc. fonts">Bold/italic etc. fonts</option>
+        <option value="Special characters">Special characters</option>
+        <option value="Modification of the position in relation to the baseline, etc.">Modification of the position in relation to the baseline, etc.</option>
+      </optgroup>
+      <optgroup label="Graphics">
+        <option value="Placing on the site in natural size and modified">Placing on the site in natural size and modified</option>
+        <option value="Each graphic should have alternative text (alt)">Each graphic should have alternative text (alt)</option>
+      </optgroup>
+    </select>
+    <br>
+<!--    radio-->
+    <input type="radio" id="radio_one" name="radios" checked>
+    <label for="radio_one">radio one</label>
+    <br>
+    <input type="radio" id="radio_two" name="radios">
+    <label for="radio_two">radio two</label>
+    <br>
+    <input type="radio" id="radio_three" name="radios">
+    <label for="radio_three">radio three</label>
+    <br>
+<!--    checkbox-->
+    <input type="checkbox" id="button_one">
+    <label for="button_one">Checkbox one</label>
+    <br>
+    <input type="checkbox" id="button_two">
+    <label for="button_two">Checkbox two</label>
+    <br>
+    <input type="checkbox" id="button_three">
+    <label for="button_three">Checkbox three</label>
+    <br>
+<!--    text area-->
+    <label for="textarea">Text area</label>
+
+    <textarea id="textarea" name="textarea" rows="4" cols="50" maxlength="200"></textarea>
+    <br>
+<!--buttons-->
+    <input type="submit" value="Submit now" />
+    <input type="reset" value="Reset" />
+  </form>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
