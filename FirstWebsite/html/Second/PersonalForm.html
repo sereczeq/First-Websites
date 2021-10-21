@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PersonalForm</title>
+</head>
+<body>
+<nav>
+  <a href="../../index.html">Main</a>
+  <a href="SecondMain.html">Second</a>
+</nav>
+<form action="MoreDetailsForm.html">
+  <section>
+    <label for="name">Name</label>
+    <br>
+    <input id="name" type="text" autocomplete="name" name="name" autofocus required>
+  </section>
+  <section>
+    <label for="month">Month of birth</label>
+    <br>
+    <datalist id="months">
+      <option value="January"></option>
+      <option value="February"></option>
+      <option value="March"></option>
+    </datalist>
+    <input id="month" list="months" name="months">
+  </section>
+  <section>
+    <label for="email">Email</label>
+    <br>
+    <input id="email" name="email" type="email" autocomplete="email" required>
+  </section>
+  <section>
+    <label for="phone">Phone number</label>
+    <br>
+    <input id="phone" name="phone" type="tel" autocomplete="tel">
+  </section>
+  <section>
+    <a href="MoreDetailsForm.html">
+    <button type="submit">Submit</button>
+      </a>
+    <button type="reset">Reset</button>
+  </section>
+</form>
+</body>
+<footer>This is a very useful
+  <mark>footer</mark>
+</footer>
+</html>
