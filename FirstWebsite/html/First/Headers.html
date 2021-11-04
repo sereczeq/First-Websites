@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--  External style-->
   <link rel="stylesheet" href="../../css/main.css">
   <meta charset="UTF-8">
   <title>Title</title>
+<!--  Internal style-->
+  <style>
+    h3{
+      color: gold;
+    }
+  </style>
 </head>
 <body>
 <a href="../../index.html">
 <h1>Main Page</h1>
 </a>
 <h1>Header 1</h1>
-<h2>Header 2</h2>
+
+<!--Inline style-->
+<h2 style="color: green">Header 2</h2>
 <h3>Header 4</h3>
 <h4>Header 4</h4>
 <h5>Header 5</h5>
@@ -24,8 +33,12 @@
 <p>&#34; &#38; &#47; &#60; - using numbers</p>
 <p>&quot; &amp; &sol; &lt; - using shortnames</p>
 <!--  Modification of the position in relation to the baseline-->
-<div>
+<div class="background-image">
   <p>Modification of the position in relation to the baseline</p>
+  <p class="text-set-by-em">We live in a society</p>
+  <p class="text-set-by-pt">Set with size 20 pt</p>
+  <p class="text-set-by-px">Set with size 20 px</p>
+  <p class="text-set-by-percent">Set with size 20 %</p>
 </div>
 </body>
 </html>

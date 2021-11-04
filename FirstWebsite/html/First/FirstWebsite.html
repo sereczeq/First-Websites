@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link rel="stylesheet" href="../../css/main.css">
 </head>
 <body>
 <!-- Add your site or application content here -->
@@ -15,6 +16,22 @@
 <!--List-->
 <h1>List</h1>
 <ol>
+  <li>option</li>
+  <li>a different option
+    <ul>
+      <li>elem</li>
+      <li>elem cont</li>
+    </ul>
+  </li>
+  <li>completely new and exiting option</li>
+  <li>option</li>
+  <li>a different option
+    <ul>
+      <li>elem</li>
+      <li>elem cont</li>
+    </ul>
+  </li>
+  <li>completely new and exiting option</li>
   <li>option</li>
   <li>a different option
     <ul>
@@ -53,10 +70,12 @@
   </tr>
 </table>
 
+<div class="relative">
+<p>those images are relative</p>
 <h1>Images</h1>
 <img src="https://media.discordapp.net/attachments/725451061959065751/898128656000516116/xd.PNG" alt="Image with default size" ondragover="aaa">
 <img src="https://cdn.discordapp.com/attachments/725451061959065751/898128656428327012/blackhole.png" alt="Image with changed size" width="100" height="100">
-
+</div>
 <!--  links-->
 <!--5. References (links):
 a. To another page
@@ -65,13 +84,16 @@ c. Files to download (via http and ftp), the files should be in different locati
 d. Sending mail
 e. Activated by clicking on the picture.
 -->
-<h1>Links</h1>
-<a href="https://www.google.com/" target="_blank">visit google</a>
-<br>
-<a href="../../index.html" download>Download html</a>
-<br>
-<a href="#fname">jump to First Name</a>
-<br>
+
+<div class="absolute" style="background: #888888">
+  <p>those links are absolute</p>
+  <h1>Links</h1>
+  <a href="https://www.google.com/" target="_blank">visit google</a>
+  <br>
+  <a href="../../index.html" download>Download html</a>
+  <br>
+  <a href="#fname">jump to First Name</a>
+  <br></div>
 
 <a href="mailto: ngo.nguyen-thanh@pwr.edu.pl">Send email to ngo.nguyen-thanh@pwr.edu.pl</a>
 <br>
@@ -88,6 +110,8 @@ e. Text field for entering a maximum of 200 characters (text area)
 f. Buttons for clearing and submitting the form.
 -->
 <h1> Form </h1>
+<div class="fixed">
+  <p>this form position is fixed</p>
 <form>
   <!--    Text Fields-->
   <label for="fname">First Name:</label><br>
@@ -141,7 +165,7 @@ f. Buttons for clearing and submitting the form.
   <input type="submit" value="Submit now" />
   <input type="reset" value="Reset" />
 </form>
-
+</div>
 <script src="../../js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/main.js"></script>

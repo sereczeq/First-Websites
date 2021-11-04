@@ -87,11 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-div {
-  margin-top: 50px;                       /* For visualization only */
-  height: 20px;                           /* This is fixed! */
-  text-align: center;
-}
+
 
 .first {
   font-size: 16px;                        /* This can change */
@@ -270,5 +266,137 @@ div {
   h3 {
     page-break-after: avoid;
   }
+
 }
 
+/*  Actually starts here*/
+
+html
+{
+  background: #222222;
+  color: white;
+}
+
+div {
+  text-align: center;
+}
+
+form{
+  margin: auto;
+  padding: 20px 20px 20px 20px;
+  width: fit-content;
+  border: 3px solid green;
+  background: #555555;
+  text-align: center;
+  /*display: flex;*/
+  /*margin: 10px 15px 20px 25px;*/
+}
+
+nav
+{
+  background: #555555;
+  border: 3px solid green;
+  font-size: medium;
+}
+
+a
+{
+  color: white;
+  font-size: large;
+}
+
+footer
+{
+  background: #555555;
+  border: 3px solid green;
+  font-size: large;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+/*em, px, pt, %*/
+.text-set-by-em
+{
+  font-size: 15em;
+}
+.text-set-by-px
+{
+  font-size: 20px;
+}
+.text-set-by-pt
+{
+  font-size: 20pt;
+}
+.text-set-by-percent
+{
+  font-size: 20%;
+}
+
+.background-image
+{
+  background-color: #555555;
+  background-image: url("https://picsum.photos/400/400/?grayscale");
+  /*background-repeat: no-repeat;*/
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+.drop-shadow-text
+{
+  filter: drop-shadow(10px 10px 8px black);
+}
+
+.background-image * {
+  /*color: black;*/
+  text-shadow: #000 0 0 3pt;
+  -webkit-font-smoothing: antialiased;
+}
+
+.idk
+{
+  margin: 10px;
+}
+
+.fixed
+{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.relative
+{
+  position: relative;
+  border: 10px;
+  right: 500px;
+}
+
+.absolute
+{
+  position: absolute;
+  bottom: 0px;
+
+}
+
+.float-left
+{
+background: #888888;
+float: left;
+}
+
+.float-right
+{
+  background: #888888;
+  float: right;
+}
+
+p.clear
+{
+  clear: left;
+}
+
+button:hover
+{
+  color: #555555;
+}
