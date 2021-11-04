@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DancingGhost</title>
+</head>
+<body>
+<div class="center-content">
+  <div class="slime-body">
+    <div class="eye"></div>
+    <div class="eye"></div>
+  </div>
+</div>
+<style>
+  .center-content
+  {
+    margin-top: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .slime-body
+  {
+    background: greenyellow;
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50% 50% 0 0;
+    animation: slime-skew 2s linear infinite;
+    display: block;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .eye
+  {
+    width: 20px;
+    aspect-ratio: 1;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .eye:nth-child(1)
+  {
+    left: 20%;
+    top: 30%
+  }
+
+  .eye:nth-child(2)
+  {
+    right: 20%;
+    top: 30%
+  }
+
+  @keyframes slime-skew {
+    0% {transform: skew(15deg)}
+    50% {transform: skew(-15deg)}
+    100% {transform: skew(15deg)}
+
+  }
+</style>
+</body>
+</html>

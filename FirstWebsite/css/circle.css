@@ -1,0 +1,47 @@
+/*hsla(hue, saturation, lightness, alpha)*/
+.circle
+{
+  background: rgb(2,0,36);
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 20px 10px 5px black;
+}
+
+.radial-gradient
+{
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 53%, rgba(0,212,255,1) 100%);
+}
+
+.linear-radient
+{
+  background: linear-gradient(7deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 53%, rgba(0,212,255,1) 100%);
+}
+
+.half-circle
+{
+  /*background: rgb(2,0,36);*/
+  background: hsla(137, 57%, 46%, 0.68);
+
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: inner-animation 4s infinite;
+}
+
+.inner
+{
+  position: relative;
+  /*background: white;*/
+  right: 50%;
+  background: #222;
+  width: auto;
+  aspect-ratio: 1;
+
+}
+@keyframes inner-animation {
+  from {transform: rotate(0)}
+  to {transform: rotate(360deg)}
+}
+

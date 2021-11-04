@@ -369,7 +369,7 @@ footer
 {
   position: relative;
   border: 10px;
-  right: 500px;
+  right: 100px;
 }
 
 .absolute
@@ -400,3 +400,11 @@ button:hover
 {
   color: #555555;
 }
+.center-content
+{
+  margin: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
