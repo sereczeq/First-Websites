@@ -5,5 +5,5 @@
   border: 100px solid;
   border-image-source: url("https://picsum.photos/400/400");
   border-image-repeat: stretch;
-  border-image-slice: 5;
+  border-image-slice: 10;
 }
