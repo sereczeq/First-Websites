@@ -1,8 +1,23 @@
 
 let minInput, maxInput
 
-window.onload = () => {
+var quit = false
 
+function firstLoop() {
+  alert("Now you will have to go through some clicking")
+  while (true) {
+    if (confirm("Do you want to stop this loop?")) break
+  }
+}
+
+function secondLoop() {
+  setTimeout(() => {
+    if (quit) return
+    quit = confirm("This alert will appear every 10 seconds")
+  }, 10_000)
+}
+
+function setupButton() {
   minInput = document.getElementById("min-input");
 
   maxInput = document.getElementById("max-input");
@@ -15,4 +30,12 @@ window.onload = () => {
     random = Math.floor(random);
     document.getElementById("generated-number").innerText = random.toString();
   })
+}
+
+window.onload = () => {
+
+  setupButton();
+  firstLoop();
+  secondLoop();
+
 }

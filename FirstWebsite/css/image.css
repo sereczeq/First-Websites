@@ -1,3 +1,8 @@
+.cr{
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 .image-container
 {
   width: 300px;

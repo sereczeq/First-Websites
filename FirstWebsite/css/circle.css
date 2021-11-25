@@ -5,7 +5,7 @@
   width: 100px;
   aspect-ratio: 1;
   border-radius: 50%;
-  box-shadow: 20px 10px 5px black;
+  box-shadow: 20px 10px 5px red;
 }
 
 .radial-gradient
@@ -42,7 +42,8 @@
 }
 @keyframes inner-animation {
   from {transform: rotate(0)}
-  to {transform: rotate(360deg)}
+  to {transform: rotate(180deg)}
 
 }
+
 
