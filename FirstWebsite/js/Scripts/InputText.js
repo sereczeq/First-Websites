@@ -5,5 +5,5 @@ window.onload = () =>
 
 function changeText() {
   let p = document.getElementById("fancy-p")
-  p.innerText = this.value
+  p.innerHTML = this.value
 }

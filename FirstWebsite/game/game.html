@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game</title>
+  <script src="Game.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="playing-field">
+  <div class="gameObject" style="background: yellow" onclick="checkRemove(this, true)"></div>
+  <div class="gameObject" style="background: pink" onclick="checkRemove(this)"></div>
+  <div class="gameObject" style="background: green" onclick="checkRemove(this)"></div>
+  <div class="gameObject" style="background: magenta" onclick="checkRemove(this)"></div>
+  <div class="gameObject" style="background: orange" onclick="checkRemove(this)"></div>
+</div>
+<input oninput="onInput(this)">
+<p class="points-text">0</p>
+</body>
+</html>
